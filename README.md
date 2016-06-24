@@ -12,9 +12,9 @@ rabbitmq-plugins enable rabbitmq_management
 systemctl enable rabbitmq-server
 systemctl restart rabbitmq-server
 ```
-By now,you may visit http://<host-ip>:15672 to check whether the installation is successful.
+By now,you may visit http://MQ_IP:15672 to check whether the installation is successful.
 
-More detailed instruction is available on http://www.rabbitmq.com/download.html
+More detailed instructions are available on http://www.rabbitmq.com/download.html
 
 2,We also use pika.
 
@@ -22,7 +22,7 @@ More detailed instruction is available on http://www.rabbitmq.com/download.html
 yum install -y python-pip
 pip install pika
 ```
-3,Setting up SSH trust between each two server in the environment.
+3,Setting up SSH trust between each two servers in the environment.
 
 ### Description
 
@@ -30,12 +30,12 @@ SmallProject is a bunch of Python scripts.
 
 The target of this project is to monitor a list of hosts within a given SLA time,via different methods.
 
-We mainly have producer,consumer,publisher and schduler,four modules.
+We mainly have producer,consumer,publisher and schduler--four modules.
 
 * Producer - responsible for dispatching jobs
 * Consumer - acting as workers
 * Publisher - publishing results to different backends.
-* Scheduler - scheduling other modules to acheive the time-limit goal
+* Scheduler - arranging other modules to acheive the time-limit goal
 
 To get the code, execute the following:
 
@@ -49,7 +49,7 @@ git clone git://github.com/pivotal/projectmonitor.git
 
 To make things easy,we take "/data/ebay" as the working directory.
 
-* Write a configuration json file as a holder of the modules' info and put it under "/data/ebay/config" where we already have a configure sample.
+* Write a configuration json file as a holder of the modules' info and put it under "/data/ebay/config" where we already have a configuration sample.
 * Put all the monitor targets' ip or hostnames into the "/data/ebay/target_list.txt",line by line.
 * Configure your RabbitMQ server IP in each script under the "/data/ebay/bin" directory.
 * Configure things you wanna to print out in each script under the "/data/ebay/bin" directory.
@@ -73,7 +73,7 @@ python scheduler.py <SLA timeout_in_seconds>
 
 ### Tests on Monitor via SSH method
 
-Since I don't have that many host,I picked up single host and changed the /usr/bin/uptime file.Each time I ssh to that host and execute the uptime command,I will get random results(failure or different uptime value).
+Since I don't have that many hosts,I picked up single host and changed its /usr/bin/uptime file.Each time I ssh to that host and execute the uptime command,I will get random results(failure or different uptime values).
 
 ### Tests on Monitor via HTTP method and PING method
 
@@ -92,6 +92,7 @@ As the number of monitor targets increased,change the configure file and start m
 ### Add new monitor method
 
 ```
+#!/usr/bin/env python
 from job import Job
 
 class NewJob(Job):
