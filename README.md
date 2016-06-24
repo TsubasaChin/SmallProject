@@ -89,7 +89,7 @@ As the number of monitor targets increased,change the configure file and start m
 
 ## Others
 
-### Add new monitor method
+### Add new monitor methods
 
 ```
 #!/usr/bin/env python
