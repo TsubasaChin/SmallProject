@@ -1,0 +1,9 @@
+#!/usr/bin/env python
+import random
+ss = '07:05:42 up %s days, 21:25, 3 users, load average: 0.00, 0.01, 0.05'
+a = random.randint(0,1)
+random_days = random.randint(1,1000)
+ss0 = ss % random_days
+ss1 = 'ssh: connect to host 10.10.10.10 port 22: Connection timed out'
+echo_list = [ss0,ss1]
+print echo_list[a]

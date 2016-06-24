@@ -1,0 +1,12 @@
+2014-12-07 14:59:16 base_connection.py[line:212] INFO Connecting to 20.26.20.70:5672
+2014-12-07 14:59:16 blocking_connection.py[line:1099] INFO Created channel=1
+2014-12-07 15:08:29 publisher.py[line:61] INFO Host 20.26.25.121 is reachable and the average ping time is 0.355.
+2014-12-07 15:08:29 publisher.py[line:61] INFO Host 20.26.25.122 is reachable and the average ping time is 0.040.
+2014-12-07 15:08:29 publisher.py[line:61] INFO Host 20.26.25.123 is reachable and the average ping time is 0.346.
+2014-12-07 15:08:29 publisher.py[line:61] INFO Host 20.26.25.124 is reachable and the average ping time is 0.363.
+2014-12-07 15:08:29 publisher.py[line:61] INFO Host 20.26.25.125 is reachable and the average ping time is 0.286.
+2014-12-07 15:08:30 publisher.py[line:61] INFO Host 20.26.25.126 is reachable and the average ping time is 0.220.
+2014-12-07 15:08:30 publisher.py[line:61] INFO Host 20.26.25.127 is reachable and the average ping time is 0.301.
+2014-12-07 15:08:33 publisher.py[line:61] INFO Host 20.26.25.128 is not reachable.
+2014-12-07 15:08:36 publisher.py[line:61] INFO Host 20.26.25.129 is not reachable.
+2014-12-07 15:08:36 publisher.py[line:61] INFO Host 20.26.25.130 is reachable and the average ping time is 0.398.

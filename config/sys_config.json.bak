@@ -1,0 +1,5 @@
+{"producer":[{"id":1,"host":"20.26.25.121","command":"python /data/ebay/producer.py",
+ "consumer":[{"id":1,"host":"20.26.25.122","command":"python /data/ebay/consumer.py INFO ERROR"},
+ {"id":2,"host":"20.26.25.123","command":"python /data/ebay/consumer.py INFO ERROR"}]}],
+"publisher":[{"id":"console","host":"20.26.25.124","command":"python /data/ebay/publisher.py INFO"},{"id":"log","host":"20.26.25.125","command":"python /data/ebay/publisher.py INFO ERROR > /data/ebay/logs.log"}]
+}

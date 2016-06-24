@@ -1,0 +1,4 @@
+{"producer":[{"id":1,"host":"20.26.25.121","command":"sh /data/ebay/bin/start_producer.sh",
+ "consumer":[{"id":1,"host":"20.26.25.122","command":"sh /data/ebay/bin/start_consumer.sh"}]}],
+"publisher":[{"id":"log","host":"20.26.25.124","command":"sh /data/ebay/bin/start_publisher_console.sh"}]
+}
