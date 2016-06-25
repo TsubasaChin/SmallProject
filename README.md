@@ -42,7 +42,7 @@ To get the code, execute the following:
 ```
 ca /data
 mkdir ebay && cd ebay
-git clone git://github.com/pivotal/projectmonitor.git
+git clone https://github.com/TsubasaChin/SmallProject.git
 ```
 
 ## Configuration
